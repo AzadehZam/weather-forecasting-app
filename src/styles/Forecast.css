@@ -2,6 +2,12 @@
   margin-top: 2rem;
 }
 
+.forecast-title {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
 .forecast-list {
   display: flex;
   flex-wrap: wrap;
