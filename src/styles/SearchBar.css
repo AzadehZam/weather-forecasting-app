@@ -1,0 +1,33 @@
+.search-bar {
+  margin: 1rem auto;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  padding: 0.5rem;
+  margin-right: 0.5rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.search-bar button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.app.dark .search-bar input {
+  background-color: #333;
+  color: #f0f0f0;
+  border: 1px solid #666;
+}
+
+.app.dark .search-bar button {
+  background-color: #444;
+  color: #f0f0f0;
+  border: 1px solid #666;
+}

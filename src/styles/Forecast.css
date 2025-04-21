@@ -1,0 +1,26 @@
+.forecast {
+  margin-top: 2rem;
+}
+
+.forecast-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.forecast-item {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  max-width: 150px;
+  text-align: left;
+  color: #000;
+}
+
+.app.dark .forecast-item {
+  background-color: #333;
+  color: #f0f0f0;
+  border-color: #555;
+}

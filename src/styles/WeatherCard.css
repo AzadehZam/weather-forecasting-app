@@ -1,0 +1,15 @@
+.weather-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 1rem auto;
+  max-width: 300px;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  color: #000;
+}
+
+.app.dark .weather-card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  border-color: #444;
+}
