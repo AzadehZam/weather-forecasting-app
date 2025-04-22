@@ -31,8 +31,18 @@ function App() {
       );
       const forecastJson = await forecastRes.json();
 
+      // Get one forecast per day (first entry of each unique date)
+      const dailyMap = new Map();
+      forecastJson.list.forEach(item => {
+        const date = item.dt_txt.split(" ")[0]; // "YYYY-MM-DD"
+        if (!dailyMap.has(date)) {
+          dailyMap.set(date, item);
+        }
+      });
+      const fiveDayForecast = Array.from(dailyMap.values()).slice(0, 5);
+
       setWeatherData(weatherJson);
-      setForecastData(forecastJson.list.slice(0, 5));
+      setForecastData(fiveDayForecast);
       setError('');
     } catch (err) {
       setError(err.message);
