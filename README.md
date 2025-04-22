@@ -14,7 +14,7 @@ A dynamic and visually appealing weather forecasting web app built with **React*
 
 ## Demo
 
-![App Screenshot](screenshot.png) <!-- Replace with your own screenshot -->
+[![Deployed App]((https://weather-forecasting-app-6j7b.onrender.com/))]
 
 ## Technologies Used
 
